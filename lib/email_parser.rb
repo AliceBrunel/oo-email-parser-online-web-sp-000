@@ -11,7 +11,7 @@ class EmailParser
   end
   
   def parse
-    @email_list.split(", ")
+    @email_list.split(/[[\w]@[\w].[\w]]/)
   end
   
 end 
