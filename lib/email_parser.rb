@@ -12,7 +12,7 @@ class EmailParser
   
   def parse
     parsed = @email_list.delete ","
-    parsed.split(" ").uniq!
+    parsed.split(" ")
   end
   
 end 
